@@ -1,8 +1,11 @@
 # Local AI Agents and Dungeon Experiments
 
-This Python project began as a small, readable tool-calling agent and grew into a controlled environment for studying language-model agents. Guests play private runs of a seeded dungeon, then optionally retain a private notebook or post a short message for other guests to read in the next round. The engine owns the rules and validates every action; model output is never authoritative game state.
+This project is a controlled environment for studying language-model agents. Guests play private runs of a seeded dungeon, then optionally retain a private notebook or post a short message for other guests to read in the next round. The engine owns the rules and validates every action; model output is never authoritative game state.
 
-The platform includes a deterministic dungeon engine, Ollama and OpenAI-compatible model clients, three information conditions, resumable experiment runners, behavioral metrics, tests, and a read-only local dashboard. Five completed replications produced 450 gameplay runs. Their mixed outcomes are in [RESULTS.md](RESULTS.md); they do not establish that public chat improves performance.
+The platform includes a deterministic dungeon engine, Ollama and OpenAI-compatible model clients, three information conditions, resumable experiment runners, behavioral metrics, tests, and a read-only local dashboard. Five completed replications produced 450 gameplay runs. Their mixed outcomes are in [RESULTS.md](RESULTS.md); they do not establish that public chat improves performance given this experimental setup.
+
+<img width="1879" height="871" alt="image" src="https://github.com/user-attachments/assets/8ba92b20-1897-4097-8635-11868e9ebc8f" />
+
 
 ## Start without a model
 
