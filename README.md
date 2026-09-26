@@ -5,6 +5,7 @@ This project is a controlled environment for studying language-model agents. Gue
 The platform includes a deterministic dungeon engine, Ollama and OpenAI-compatible model clients, three information conditions, resumable experiment runners, behavioral metrics, tests, and a read-only local dashboard. Five completed replications produced 450 gameplay runs. Their mixed outcomes are in [RESULTS.md](RESULTS.md); they do not establish that public chat improves performance given this experimental setup.
 
 <img width="1879" height="871" alt="image" src="https://github.com/user-attachments/assets/8ba92b20-1897-4097-8635-11868e9ebc8f" />
+<img width="1405" height="734" alt="image" src="https://github.com/user-attachments/assets/79514405-644b-47a6-a0e9-327a89bfbfc0" />
 
 
 ## Start without a model
