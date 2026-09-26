@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Observatory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div><span class="eyebrow">LOCAL MONITOR</span><h1>Dungeon Observatory</h1></div>
+    <div class="status"><span id="pulse"></span><span id="refreshStatus">Connecting…</span></div>
+  </header>
+  <main>
+    <aside>
+      <label for="experimentSelect">Experiment</label>
+      <select id="experimentSelect"></select>
+      <div id="experimentMeta" class="meta"></div>
+      <button id="refreshButton">Refresh now</button>
+      <label class="toggle"><input id="autoRefresh" type="checkbox" checked> Auto-refresh every 5 seconds</label>
+      <p class="hint">The dashboard is read-only. It never changes a run or checkpoint.</p>
+    </aside>
+    <section id="content">
+      <div class="empty">Select an experiment to begin.</div>
+    </section>
+  </main>
+  <template id="dashboardTemplate">
+    <div class="cards" id="cards"></div>
+    <section class="panel">
+      <div class="panel-heading"><div><span class="eyebrow">TRAJECTORY</span><h2>Score and depth by round</h2></div><div id="legend" class="legend"></div></div>
+      <canvas id="scoreChart" height="250"></canvas>
+    </section>
+    <div class="split">
+      <section class="panel"><span class="eyebrow">LATEST</span><h2>Latest round</h2><div id="latestRuns"></div></section>
+      <section class="panel"><span class="eyebrow">SIGNALS</span><h2>Warnings and failures</h2><div id="warnings"></div></section>
+    </div>
+    <section class="panel"><span class="eyebrow">BRANCHING</span><h2>World exploration</h2><div id="branches"></div></section>
+    <section class="panel"><span class="eyebrow">PUBLIC ROOM</span><h2>Chat</h2><div id="chat"></div></section>
+    <section class="panel"><span class="eyebrow">ALL RUNS</span><h2>Run ledger</h2><div class="table-wrap"><table id="runsTable"></table></div></section>
+    <section class="panel"><span class="eyebrow">PRIVATE OUTPUT</span><h2>Post-run reviews</h2><div id="reviews"></div></section>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
